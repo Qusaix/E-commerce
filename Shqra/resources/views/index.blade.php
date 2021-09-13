@@ -120,7 +120,7 @@
 													<div class="deals_timer_subtitle">Offer ends in:</div>
 												</div>
 												<div class="deals_timer_content ml-auto">
-													<div class="deals_timer_box clearfix" data-target-time="{{$date->month}} {{$date->day}} 2020">
+													<div class="deals_timer_box clearfix" data-target-time="{{$date->month}} {{$date->day}} 2021">
 														<div class="deals_timer_unit"> 
 															<div id="deals_timer1_hr" class="deals_timer_hr"></div>
 															<span>hours</span>
