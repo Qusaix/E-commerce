@@ -22,7 +22,7 @@ class HomeController extends Controller
         $ads = ads::find(1);
         $slider = Post::take(3)->get();
 
-
+ 
       
 
         return view('index',compact(
