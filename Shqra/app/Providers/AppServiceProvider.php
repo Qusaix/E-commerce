@@ -26,7 +26,7 @@ class AppServiceProvider extends ServiceProvider
     {
         Builder::defaultStringLength(191);
         // Change This Whene You Deploy
-       //\URL::forceScheme('https');
+       \URL::forceScheme('https');
 
     }
 }
