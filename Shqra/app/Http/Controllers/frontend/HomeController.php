@@ -18,10 +18,9 @@ class HomeController extends Controller
         $onSale = Featured::where('new_price',"!=",null)->get();
         $countdowns = Countdown::get();
         $ads = ads::find(1);
-        $slider = Post::take(3)->get();
+        $slider = [];
 
  
-        dd($slider);
 
         return view('index',compact(
         'categores',
