@@ -4,7 +4,7 @@ namespace App\Http\Controllers\frontend;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\categores;
+use App\Categores;
 use App\Ads;
 use App\Featured;
 use App\Countdown;
