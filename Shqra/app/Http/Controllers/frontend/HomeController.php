@@ -7,8 +7,7 @@ use App\categores;
 use App\ads;
 use App\Featured;
 use App\Countdown;
-// use App\Post;
-
+use App\Post;
 
 class HomeController extends Controller
 {
@@ -19,10 +18,10 @@ class HomeController extends Controller
         $onSale = Featured::where('new_price',"!=",null)->get();
         $countdowns = Countdown::get();
         $ads = ads::find(1);
-        // $slider = Post::take(3)->get();
+        $slider = Post::take(3)->get();
 
  
-      
+        dd($slider);
 
         return view('index',compact(
         'categores',
