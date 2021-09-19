@@ -7,7 +7,6 @@ use App\categores;
 use App\ads;
 use App\Featured;
 use App\Countdown;
-use App\Post;
 use DB;
 class HomeController extends Controller
 {
@@ -18,7 +17,8 @@ class HomeController extends Controller
         $onSale = Featured::where('new_price',"!=",null)->get();
         $countdowns = Countdown::get();
         $ads = ads::find(1);
-        $slider = DB::table('posts')->get();
+        $slider = DB::table('posts')->take(3)->get();
+        // dd($slider);
 
  
 
