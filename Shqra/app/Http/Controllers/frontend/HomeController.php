@@ -8,7 +8,7 @@ use App\ads;
 use App\Featured;
 use App\Countdown;
 use App\Post;
-
+use DB;
 class HomeController extends Controller
 {
     public function index()
@@ -18,7 +18,7 @@ class HomeController extends Controller
         $onSale = Featured::where('new_price',"!=",null)->get();
         $countdowns = Countdown::get();
         $ads = ads::find(1);
-        $slider = [];
+        $slider = DB::table('posts')->get();
 
  
 
