@@ -28,7 +28,7 @@ class HomeController extends Controller
         'featured',
         'onSale',
         'countdowns',
-        // "slider"
+         "slider"
     ));
     }
 }
